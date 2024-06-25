@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: white;
+    color: #181411;
+    font-family: 'Noto Sans Display', Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+}
+.container-logo{
+  height: 30%;
+  width: 100%;
+}
+
+.logo{
+  height: 200px;
+}
+
+.container-fluid {
+    text-align: center;
+    flex-direction: column;
+    height: 80px;
+    font-size: 1.5em;
+    background-color: white !important;
+    
+}
+
+.container-portada {
+    width: 100%;
+    height: 740px;
+    background-color: black;
+    /* background-image: url(/proyectocv/proyecto_cv_rosa/Diseño\ sin\ título\ \(13\).png); */
+    display: flex;
+    /* filter: blur(6px); */
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute fixed;
+    z-index: 1;
+    
+}
+
+.texto-portada {
+    width: 35em;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+    align-items: center;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.titulo-portada {
+  color:white;
+  font-family:'Fraunces', 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', serif;
+  font-size: 7em;
+  letter-spacing: -5px;
+}
+
+.subtitulo {
+  color:white;
+  font-size: 2em;
+  font-weight: 100;
+  font-family:"Noto Serif Display", serif;
+} 
+
+i{
+  font-family: "Noto Serif Display", serif;
+  transition: ease-in .6s;
+}
+
+/* ABOUT ME */
+
+.cover1{
+  background-image: url(/proyectocv/proyecto_cv_rosa/Diseño\ sin\ título\ \(12\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 600px;
+  
+}
+.container-foto{
+  align-items: center;
+}
+
+#container-about {
+  margin: 10% 0 5% 0;
+}
+
+.img1 {
+    border-radius: 400px;
+    height: 500px;
+    margin: 10% 0 5% 0;
+
+}
+
+.titulo {
+  font-family:'Fraunces', 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', serif;
+    font-size: 7em;
+    margin: 5% 0 5% 20%;
+    color: #543b33;
+    letter-spacing: -5px;
+}
+
+strong {
+  color:#AB7D6E;
+}
+
+.texto {
+    font-size: 1.2em;
+    margin: -50px 0 0 20%;
+    /* width: 100% !important; */
+    text-align: left;
+    width: 70%;
+  text-align: justify;
+  
+}
+
+/* .btn {
+    margin: 30px 0 0 20%;
+    background-color: black !important;
+    color: white;
+    border: black;
+    width: 30%;
+}
+
+.btn-info {
+    background-color: black !important;
+    color: #fff;
+} */
+
+/* educacion */
+.container-educacion{
+    background-color: #ffffff;
+    background-image: url(/proyectocv/proyecto_cv_rosa/Diseño\ sin\ título\ \(14\).png);
+    background-repeat: no-repeat;
+}
+
+.titulo2 {
+  font-family:'Fraunces', 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', serif;
+  font-size: 5em;
+  text-align: center;
+  margin: 5% 0;
+  color: #543b33;
+  letter-spacing: -5px;
+
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #f1f1f1;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(156, 156, 156);
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading {
+    text-transform: none;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        margin-bottom: 100px;
+        min-height: 100px;
+    }
+
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .timeline>li .timeline-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        padding: 0 50% 20px 20px;
+        text-align: left;
+        width: 40%;
+    }
+}
+
+@media(min-width:992px) {
+    .timeline>li {
+        min-height: 150px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .timeline>li {
+        min-height: 170px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 40px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 100px 20px 20px;
+    }
+}
+
+/* /*  banner experiencia */
+
+.cover{
+  background-image: url(/proyectocv/proyecto_cv_rosa/Diseño\ sin\ título\ \(9\).png);
+  position: relative;
+  width: 1920px;
+  height: 600px;
+  margin-bottom: -100px;
+}
+
+.text-experience{
+  text-align: right;
+  margin: -50px 0 0 50%;
+  width: 40%;
+  font-size: 1.1em;
+
+}
+.contenedor-galeria {
+  width: 80%;
+  height: 90%;
+  overflow: hidden;
+  margin: 10% 10%;
+  border-radius: none !important;
+  
+  
+}
+
+.contenedor-galeria ul {
+  width: 2000px;
+}
+
+.contenedor-galeria li {
+  position: relative;
+  display: block;
+  width: 160px;
+  float: left;
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+.contenedor-galeria ul:hover li {
+  width: 40px;
+  filter: brightness(50%);
+}
+
+.contenedor-galeria ul li:hover {
+  width: 640px;
+  filter: brightness(100%);
+}
+
+.contenedor-galeria li img {
+  display: block;
+  width: 640px;
+  height: 100%;
+}
+
+.titulo-imagen {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: block;
+  transition: all 0.5s ease;
+  animation: cambia-color 10s linear infinite;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8));
+  background-size: 400% 400%;
+}
+
+@keyframes cambia-color {
+  0% {
+      background-position: 0%, 50%;
+  }
+  50% {
+      background-position: 100%, 50%;
+  }
+  100% {
+      background-position: 0%, 100%;
+  }
+}
+
+.titulo-imagen a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 19px;
+  text-shadow: 0 1px 2px #000;
+  transition: all 0.5s ease;
+}
+
+.contenedor-galeria ul li:hover .titulo-imagen {
+  top: 0%;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-imagen:hover a {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.titulo-imagen:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* fin banner experiencia  */
+
+/* EXPERIENCIA */
+
+.titulo-right {
+    text-align: right;
+    font-family:'Fraunces', 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', serif;
+    font-size: 5em;
+    margin: 5% 15% 5% 0;
+    color: #543b33;
+    letter-spacing: -5px;
+    }
+
+.title-card {
+    margin: 30% 0 0 0;
+
+}
+
+.boxesContainer {
+    display: flex; 
+    flex-direction: inline;
+    padding: 0 50px;
+
+}
+
+.cardBox {
+    font-size: 1.2em;
+    margin: auto;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+  }
+  
+.texto-card {
+margin: 10% 15% ;
+color: white;
+font-size: 20px;
+text-align: justify;
+}
+
+.cardBox:hover .card {
+    transform: rotateY( 180deg);
+  }
+  
+.card {
+    background: #222222;
+    cursor: default;
+    height: 600px;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    border-radius: 50px;
+  }
+  
+.card p {
+    margin-bottom: 1.8em;
+  }
+  
+.card .front, .card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+.card .back {
+    transform: rotateY( 180deg);
+  }
+  
+  
+  @-webkit-keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  
+  @keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cardBox {
+      margin-left: 2.8%;
+      margin-top: 3%;
+      width: 46%;
+    }
+    .card {
+      height: 285px;
+    }
+    .cardBox:last-child {
+      margin-bottom: 3%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cardBox {
+      width: 94.5%;
+    }
+    .card {
+      height: 260px;
+    }
+  }
+
+
+/* IDIOMAS */
+
+.titulo-idiomas{
+    color: white !important;
+    font-family:'Fraunces', 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', serif;
+    font-size: 5em;
+    margin:  2% 0 0 10%;
+    letter-spacing: -5px;
+}
+
+.container-idioma{
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 5%;
+  background-color: #723A3D;
+  border-radius: 120px;
+  transition:ease-out .7s;
+}
+
+.idioma {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.texto-idiomas{
+  margin-top: -50px;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: -5px;
+  font-style: italic;
+}
+
+.texto-idiomas-2{
+  margin-top: -20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.569) !important;
+  font-size: 2em;
+  font-weight: 300;
+  font-family:"fraunces", serif;
+  letter-spacing: -2px;
+}
+.bandera {
+    height: 100px;
+    margin: 5%;
+    /* filter: grayscale(90%); */
+
+}
+
+.estrellas {
+  height: 100px;
+}
+
+
+/* CURSOS */
+
+
+.container-cursos{
+  margin: 2% 2% 5% 2%;
+}
+
+.imagen-cursos{
+  align-items: center;
+  width: 380px;
+  height: 200px;
+}
+
+.titulo-cursos{
+  color: rgb(58, 42, 42) !important;
+  font-family:'Fraunces', 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', serif;
+  font-size: 5em;
+  margin: 5% 10% 5% 0;
+  letter-spacing: -5px;
+  text-align: right;
+  transition: ease-in .6s;
+}
+
+p{
+ color: rgb(49, 45, 45);
+ margin-top: 25px;
+}
+
+h3{
+padding:10% 0 0 0;
+}
+
+
+.texto-cursos{
+padding: 10px;
+width: 90%;
+text-align: justify;
+color:rgb(49, 45, 45) !important;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: left;
+  border-bottom: 1px solid #CCC;
+  color:rgb(49, 45, 45) ;
+  font-size:1.5em;
+  font-family:'Noto Sans Display', Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;;
+  text-transform: uppercase;
+}
+label:hover {
+  color: #f49696;
+}
+label::before {
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+}
+section {
+  padding: 0 20px;
+}
+#toggle:checked ~ #expand {
+  height: 250px;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+
+/* SKILLS */
+
+hr{
+  border: solid 3px #222222; 
+  margin: 5% ;
+}
+
+.titulo-skills{
+font-size: 5em;
+letter-spacing: -5px;
+margin: -20px 0 5% 5%;
+
+
+}
+
+.cardBox {
+	float: left;
+	perspective: 800px;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	font-size: 1.2em;
+}
+
+.cardBox:hover .card {
+	transform: rotateY( 180deg);
+}
+
+.card {
+	background: #222;
+	cursor: default;
+	transform-style: preserve-3d;
+	-webkit-transition: transform 0.4s ease 0s;
+	transition: transform 0.4s ease 0s;
+	width: 70%;
+	-webkit-animation: mymove 1s 1;
+	animation: mymove 1s 1;
+  height: 300px;
+
+}
+
+
+.card p {
+	margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+	backface-visibility: hidden;
+	box-sizing: border-box;
+	color: white;
+	display: block;
+	padding: 0.2em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+	height: 100%;
+}
+
+.card .front strong {
+	background: #fff;
+	border-radius: 100%;
+	color: #222;
+	font-size: 1.5em;
+	line-height: 30px;
+	padding: 0 7px 4px 6px;
+}
+
+.card .back {
+	transform: rotateY( 180deg);
+}
+
+.card .back a {
+	padding: 0.3em 0.5em;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 1px;
+	font-size: 0.9em;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+	background: #fff;
+	color: #333;
+	text-shadow: 0 0 1px #b28f8f;
+}
+
+
+.cardBox:nth-child(2) .card {
+	-webkit-animation: mymove 1.5s 1;
+	animation: mymove 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+	-webkit-animation: mymove 2s 1;
+	animation: mymove 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+	-webkit-animation: mymove 2.5s 1;
+	animation: mymove 2.5s 1;
+}
+
+@-webkit-keyframes mymove {
+	from {transform: rotateY( 180deg);}
+	to {transform: rotateY( 0deg);}
+}
+
+@keyframes mymove {
+	from {transform: rotateY( 180deg);}
+	to {transform: rotateY( 0deg);}
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+	.cardBox {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.cardBox {
+		margin-left: 2.8%;
+		margin-top: 3%;
+		width: 46%;
+	}
+	.cardBox:last-child {
+		margin-bottom: 3%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cardBox {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.cardBox {
+		font-size: 1.2em;
+	}
+	.cardBox {
+		width: 94.5%;
+	}
+}
